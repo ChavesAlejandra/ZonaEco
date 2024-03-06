@@ -1,0 +1,375 @@
+@keyframes CategoriesSpawn {
+    0%{width: 0%; padding-left: 0px;}
+    100%{width: 15%; padding-left: 50px;}
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+::placeholder{
+    font-style: italic;
+}
+
+header{
+    background-color: #004225;
+    opacity: 90%;
+    width: 100%;
+    height: 107px;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: 35% 35% 20%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: 
+    ". . ."
+    "foldable search-bar icons"
+    ". . .";
+}
+
+.foldable{
+    cursor: default;
+    display: grid;
+    grid-template-areas:
+    "menu logo logo-text";
+    grid-template-columns: 65% 12% 25%;
+    width: 500px;
+    margin-left: 25px;
+    grid-area: foldable;
+}
+
+.menu-button{
+    background-color: inherit;
+    border: 0;
+    width: 55px;
+    height: 55px;
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+    grid-area: menu;
+    display: block;
+}
+
+.close{
+    width: 35px;
+    height: 35px;
+    padding-top: 8px;
+    grid-area: menu;
+    display: none;
+}
+
+.logo{
+    width: 60px;
+    height: 53px;
+    grid-area: logo;
+}
+
+header h2{
+    padding-top: 17px;
+    grid: logo-text;
+}
+
+.search-bar{
+    width: 100%;
+    grid-area: search-bar;
+    position: relative;
+    padding-left: 70px;
+    background-color: #ffcf9d;
+    border-radius: 100px;
+    opacity: 0.8;
+}
+
+.bar{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+    border: 0;
+    outline: 0;
+}
+
+.search{
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+}
+
+header .icons{
+    display: flex;
+    grid-area: icons;
+    margin-left: 300px;
+    width: 215px;
+}
+
+.cart{
+    width: 43px;
+    height: 43px;
+}
+
+.user{
+    width: 39px;
+    height: 39px;
+    padding: 0 45px;
+}
+
+.help{
+    width: 43px;
+    height: 43px;
+}
+
+body{
+    background-color: #f5f5cd;
+}
+
+.categories{
+    background-color: #fdeedd;
+    width: 15%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    opacity: 0.8;
+    z-index: 1;
+    visibility: hidden;
+    cursor: default;
+    position: absolute;
+}
+
+.categories h2{
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.categories p{
+    font-size: large;
+    font-weight: 400;
+    
+}
+
+.categories div{
+    display: flex;
+    align-items: center;
+    margin: 11px 0px;
+    border-radius: 10px;
+    padding: 2.8px;
+    width: 90%;
+}
+
+.categories div:hover{
+    background-color: #ffcf9d;
+    box-shadow: 4px 4px 4px;
+}
+
+.categories div p{
+    padding-left: 5%;
+}
+
+.category-icon{
+    width: 40px;
+}
+
+footer{
+    background-color: #004225;
+    opacity: 0.85;
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-areas: 
+    ". . . ."
+    "company materials client-area icons"
+    ". . . .";
+    grid-template-columns: 33% 33% 25% 10%;
+    
+}
+
+footer h2{
+    font-size: large;
+    font-weight: bold;
+}
+
+.company{
+    grid-area: company;
+    margin-left: 20px;
+}
+
+.materials{
+    grid-area: materials;
+}
+
+.client-area{
+    grid-area: client-area;
+}
+
+footer .icons{
+    grid-area: icons;
+    margin-right: 20px;
+    display: grid;
+    grid-template-areas: 
+    ". logo ."
+    "linkedin instagram pinterest";
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+
+}
+
+footer .icons .logo{
+    grid-area: logo;
+    width: 100%;
+    height: 80%;
+}
+
+.linkedin{
+    width: 40px;
+    grid-area: linkedin;
+}
+
+.instagram{
+    width: 40px;
+    grid-area: instagram;
+}
+
+.pinterest{
+    width: 40px;
+    grid-area: pinterest;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    "whoweare . whatwedo"
+    ". carousel .";
+    grid-template-columns: 20% 60% 20%;
+}
+
+.whoweare{
+    background-color: #ffcf9d;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin: 23.5px 30px;
+    grid-area: whoweare;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whoweare h2{
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+
+.whoweare p{
+    font-size: large;
+}
+
+.whatwedo{
+    background-color: #ffcf9d;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin: 23.5px 30px;
+    grid-area: whatwedo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatwedo h2{
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+
+.whatwedo p{
+    font-size: large;
+}
+
+.carousel{
+    background-color: #ffcf9d;
+    border-radius: 50px;
+    padding: 20px;
+    grid-area: carousel;
+    display: grid;
+    grid-template-areas: 
+    "left-arrow chair . spongebob . sweater right-arrow";
+    grid-template-columns: 5% 26% 5% 27% 5% 26% 5%;
+    margin-bottom: 20px;
+}
+
+.left-arrow{
+    grid-area: left-arrow;
+    border: solid;
+}
+
+.right-arrow{
+    grid-area: right-arrow;
+    border: solid;
+}
+
+.chair{
+    grid-area: chair;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chair .image img{
+    width: 300px;
+}
+
+.chair h2{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.chair p{
+    font-size: large;
+}
+
+.spongebob{
+    grid-area: spongebob;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spongebob .image img{
+    width: 300px;
+}
+
+.spongebob h2{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.spongebob p{
+    font-size: large;
+}
+
+.sweater{
+    grid-area: sweater;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sweater .image img{
+    width: 300px;
+}
+
+.sweater h2{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.sweater p{
+    font-size: large;
+}
