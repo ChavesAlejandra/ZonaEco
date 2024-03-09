@@ -6,6 +6,7 @@
     <title>Zona ECO</title>
     <link rel="shortcut icon" href="Images/logo.png">
     <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../Base/base.css">
     <link rel="stylesheet" href="style.css">
     <meta name="Author" content="Zona ECO">
 </head>
@@ -71,45 +72,84 @@
         </div>
 
         <div class="main">
-            <div class="whoweare">
-                <h2>Quienes Somos</h2>
-                <p>
-                    Somos un grupo concienciado con los
-                    problemas actuales del medio ambiente
-                    que aporta su granito de arena
-                    ofreciendo productos hechos con
-                    materiales reciclados
-                </p>
+            <div class="info">
+                <div class="whoweare">
+                    <h2>Quienes Somos</h2>
+                    <p>
+                        Somos un grupo concienciado con los
+                        problemas actuales del medio ambiente
+                        que aporta su granito de arena
+                        ofreciendo productos hechos con
+                        materiales reciclados.
+                    </p>
+                </div>
+                <div class="whatwedo">
+                    <h2>Que Hacemos</h2>
+                    <p>
+                        Creamos juguetes, ropa, entre otras
+                        cosas, utilizando materiales 100%
+                        reciclados dandoles una segunda vida.
+                    </p>
+                </div>
             </div>
-            <div class="whatwedo">
-                <h2>Que Hacemos</h2>
-                <p>
-                    Creamos juguetes, ropa, entre otras
-                    cosas, utilizando materiales 100%
-                    reciclados dandoles una segunda vida
-                </p>
-            </div>
-            <div class="carousel">
-                <div class="left-arrow"></div>
-                <div class="chair">
-                    <div class="image"><img src="Images/chair-white.png" alt="chair-white"></div>
-                    <h2>SILLA</h2>
-                    <p>Este producto está hecho con polipropileno reciclado</p>
-                </div>
-                <div class="spongebob">
-                    <div class="image"><img src="Images/chair-white.png" alt="chair-white"></div>
-                    <h2>PIÑA BOB ESPONJA</h2>
-                    <p>Este producto está hecho con polipropileno reciclado</p>
-                </div>
-                <div class="sweater">
-                    <div class="image"><img src="Images/chair-white.png" alt="chair-white"></div>
-                    <h2>JERSEY NAVIDEÑO</h2>
-                    <p>Este producto está hecho con polipropileno reciclado</p>
-                </div>
-                <div class="right-arrow"></div>
+            <div class="carousel" id="carousel">
+                <button class="left-arrow" id="left-arrow"><img src="Images/arrow-left.png" alt="arrow-left"></button>
+                    <div id="inner-carousel">
+                        <ul id="items-list">
+                            <li class="chair">
+                                <div class="image"><img src="Images/chair-grey.png" alt="chair-grey"></div>
+                                <div class="text">
+                                    <h2>SILLA</h2>
+                                    <p>Este producto está hecho con polipropileno reciclado.</p>
+                                </div>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                            <li class="spongebob">
+                                <div class="image"><img src="Images/spongebob.PNG" alt="chair-white"></div>
+                                <div class="text">
+                                    <h2>PIÑA BOB ESPONJA</h2>
+                                    <p>Este producto está hecho con polipropileno reciclado.</p>
+                                </div>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                            <li class="sweater">
+                                <div class="image"><img src="Images/sweater.PNG" alt="chair-white"></div>
+                                <div class="text">
+                                    <h2>JERSEY NAVIDEÑO</h2>
+                                    <p>Este producto está hecho con polipropileno reciclado.</p>
+                                </div>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                            <li class="wardrobe">
+                                <div class="image"><img src="Images/wardrobe.png" alt="wardrobe"></div>
+                                <h2>ARMARIO</h2>
+                                <p>Este producto está hecho con polipropileno reciclado.</p>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                            <li class="kidsbag">
+                                <div class="image"><img src="Images/kidsbag.png" alt="kidsbag"></div>
+                                <h2>MOCHILA PARA NIÑOS</h2>
+                                <p>Este producto está hecho con polipropileno reciclado.</p>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                            <li class="couch">
+                                <div class="image"><img src="Images/couch.jpg" alt="couch"></div>
+                                <h2>SOFÁ CHESLÓN</h2>
+                                <p>Este producto está hecho con polipropileno reciclado.</p>
+                                <button class="love-icon empty-love"><img src="Images/love.png" alt="love"></button>
+                                <button class="love-icon filled-love"><img src="Images/love-in.png" alt="love"></button>
+                            </li>
+                        </ul>
+
+                    </div>
+                <button class="right-arrow" id="right-arrow"><img src="Images/arrow-right.png" alt="arrow-right"></button>
             </div>
         </div>
-
     </main>
     <footer>
         <div class="company">
