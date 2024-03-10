@@ -85,18 +85,25 @@ filledLoveIcon[5].addEventListener("click", function(){
 let carousel = document.getElementById("items-list")
 let itemsList = carousel.querySelectorAll("li")
 let carouselPos = 0 // posición del carrusel
-let imageWidth = 360 // carousel.style.width // 360 // los píxeles que se desea mover
-let imageCount = 3 // número de imágenes
+let imageCount // número de imágenes
+let imageWidth // tamaño de imagen
+function MediaMatch(){
+    if (window.matchMedia("(width<900px)").matches){imageCount = 2; imageWidth = 226}
+    else if(window.matchMedia("(width<1300px)").matches){imageCount = 2; imageWidth = 350}
+    else {imageCount = 3; imageWidth = 350}
+}
 let leftArrow = document.getElementById("left-arrow")
 let rightArrow = document.getElementById("right-arrow")
 
 leftArrow.addEventListener("click", function(){
+    MediaMatch()
     carouselPos += imageWidth*imageCount
     carouselPos = Math.min(carouselPos, 0)
     carousel.style.marginLeft = carouselPos + "px"
 })
 
 rightArrow.addEventListener("click", function(){
+    MediaMatch()
     carouselPos -= imageWidth*imageCount
     carouselPos = Math.max(carouselPos, -imageWidth*(itemsList.length - imageCount))
     carousel.style.marginLeft = carouselPos + "px"
