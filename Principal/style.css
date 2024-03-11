@@ -566,7 +566,8 @@
     .info{
         display: flex;
         justify-content: space-evenly;
-        margin: 30px;
+        margin: 40px;
+        margin-top: 60px;
     }
     
     .whoweare{
