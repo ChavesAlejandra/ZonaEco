@@ -1,4 +1,4 @@
-    @keyframes ZoomIn{
+@keyframes ZoomIn{
     0%{transform: scale(1);}
     100%{transform: scale(1.1);}
 }
@@ -257,7 +257,7 @@
         width: 20px;
         position: relative;
         bottom: 360px;
-        left: 100px;
+        left: 115px;
         background-color: transparent;
         border: none;
     }
