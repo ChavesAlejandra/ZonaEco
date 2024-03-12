@@ -1,0 +1,123 @@
+b{
+    font-weight: bold;
+}
+
+.product{
+    display: grid;
+    grid-template-areas:
+    "chair description buy"
+    "comments . ." ;
+    grid-template-columns: 40% 35% 15%  ;
+}
+
+.chair{
+    padding-top: 5%;
+    padding-left: 45%;
+    grid-area: chair;
+}
+
+.chair-image img{
+    background-color: #ffd09d83;
+    border-radius: 10%;
+    width: 400px;
+}
+
+
+.love img{
+    width: 40px;
+}
+
+.change-color{
+    padding-top: 5% ;
+    display: flex;
+}
+
+.love{
+    margin-left: 10%;
+}
+
+.colors div{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.colors{
+    display: flex;
+}
+#grey{background-color: grey;}
+#black{background-color: black;}
+#white{background-color: white;}
+#beige{background-color: #988678;}
+
+.description{
+    grid-area: description;
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 75%;
+}
+
+
+.name{
+    font-size: x-large;
+}
+.buy{
+    grid-area: buy;
+    padding-top: 25%;
+    
+}
+
+.buy div{
+    margin: 5%;
+}
+
+.price{
+    background-color: #ffd09d;
+    border-radius: 50px;
+    width: 20%;
+    padding: 5px;
+    padding-left: 5%;
+}
+
+.count{
+    background-color: #ffd09d;
+    border-radius: 50px;
+    width: 40%;
+    padding: 5px;
+    padding-left: 5%;
+}
+.add-cart{
+    background-color: #ffd09d;
+    border-radius: 50px;
+    width: 49%;
+    padding: 5px;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.add-cart img{
+    width: 25px;
+    margin-right: 5px ;
+}
+
+.comments{
+    grid-area: comments;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 45%;
+}
+.user-img{
+    display: flex;
+    align-items: center;
+}
+.user-img img{
+    width: 25px;
+    margin-right: 5px ;
+}
+.title-comment{
+    font-size: x-large;
+}
+.comment-text{
+    padding-left: 10%;
+}
