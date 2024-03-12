@@ -138,13 +138,7 @@
         height: 300px;
     }
     
-    .chair h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .chair p{
-        font-size: large;
-    }
+    
     
     .chair .image:hover{
         animation-name: ZoomIn;
@@ -157,13 +151,7 @@
         height: 300px;
     }
     
-    .spongebob h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .spongebob p{
-        font-size: large;
-    }
+    
     
     .spongebob .image:hover{
         animation-name: ZoomIn;
@@ -177,13 +165,7 @@
         display: block;
     }
     
-    .sweater h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .sweater p{
-        font-size: large;
-    }
+    
     
     .sweater .image:hover{
         animation-name: ZoomIn;
@@ -191,22 +173,16 @@
         transform: scale(1.1);
     }
     
-    .wardrobe .image img{
+    .drawer .image img{
         margin-top: 30px;
         width: 220px;
         height: 270px;
         display: block;
     }
     
-    .wardrobe h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .wardrobe p{
-        font-size: large;
-    }
     
-    .wardrobe .image:hover{
+    
+    .drawer .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
@@ -218,13 +194,7 @@
         display: block;
     }
     
-    .kidsbag h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .kidsbag p{
-        font-size: large;
-    }
+    
     
     .kidsbag .image:hover{
         animation-name: ZoomIn;
@@ -232,22 +202,24 @@
         transform: scale(1.1);
     }
     
-    .couch .image img{
+    .armchair .image img{
         margin-top: 30px;
         width: 250px;
         height: 270px;
         display: block;
     }
     
-    .couch h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .couch p{
+    .text h2{
         font-size: large;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .text p{
+        font-size: medium;
+        padding-top: 20px;
     }
     
-    .couch .image:hover{
+    .armchair .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
@@ -410,13 +382,7 @@
         height: 300px;
     }
     
-    .chair h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .chair p{
-        font-size: large;
-    }
+    
     
     .chair .image:hover{
         animation-name: ZoomIn;
@@ -429,13 +395,7 @@
         height: 300px;
     }
     
-    .spongebob h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .spongebob p{
-        font-size: large;
-    }
+    
     
     .spongebob .image:hover{
         animation-name: ZoomIn;
@@ -449,13 +409,7 @@
         display: block;
     }
     
-    .sweater h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .sweater p{
-        font-size: large;
-    }
+    
     
     .sweater .image:hover{
         animation-name: ZoomIn;
@@ -463,22 +417,16 @@
         transform: scale(1.1);
     }
     
-    .wardrobe .image img{
+    .drawer .image img{
         margin-top: 30px;
         width: 220px;
         height: 270px;
         display: block;
     }
     
-    .wardrobe h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .wardrobe p{
-        font-size: large;
-    }
     
-    .wardrobe .image:hover{
+    
+    .drawer .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
@@ -490,13 +438,7 @@
         display: block;
     }
     
-    .kidsbag h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .kidsbag p{
-        font-size: large;
-    }
+    
     
     .kidsbag .image:hover{
         animation-name: ZoomIn;
@@ -504,22 +446,24 @@
         transform: scale(1.1);
     }
     
-    .couch .image img{
+    .armchair .image img{
         margin-top: 30px;
         width: 250px;
         height: 270px;
         display: block;
     }
     
-    .couch h2{
-        font-size: x-large;
-        font-weight: bolder;
-    }
-    .couch p{
+    .text h2{
         font-size: large;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .text p{
+        font-size: medium;
+        padding-top: 20px;
     }
     
-    .couch .image:hover{
+    .armchair .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
@@ -685,13 +629,7 @@
         height: 200px;
     }
     
-    .chair h2{
-        font-size: large;
-        font-weight: bolder;
-    }
-    .chair p{
-        font-size: medium;
-    }
+    
     
     .chair .image:hover{
         animation-name: ZoomIn;
@@ -704,13 +642,7 @@
         height: 200px;
     }
     
-    .spongebob h2{
-        font-size: large;
-        font-weight: bolder;
-    }
-    .spongebob p{
-        font-size: medium;
-    }
+
     
     .spongebob .image:hover{
         animation-name: ZoomIn;
@@ -724,13 +656,7 @@
         display: block;
     }
     
-    .sweater h2{
-        font-size: large;
-        font-weight: bolder;
-    }
-    .sweater p{
-        font-size: medium;
-    }
+   
     
     .sweater .image:hover{
         animation-name: ZoomIn;
@@ -738,22 +664,15 @@
         transform: scale(1.1);
     }
     
-    .wardrobe .image img{
+    .drawer .image img{
         margin-top: 30px;
         width: 120px;
         height: 170px;
         display: block;
     }
+
     
-    .wardrobe h2{
-        font-size: large;
-        font-weight: bolder;
-    }
-    .wardrobe p{
-        font-size: medium;
-    }
-    
-    .wardrobe .image:hover{
+    .drawer .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
@@ -766,13 +685,7 @@
         display: block;
     }
     
-    .kidsbag h2{
-        font-size: large;
-        font-weight: bolder;
-    }
-    .kidsbag p{
-        font-size: medium;
-    }
+
     
     .kidsbag .image:hover{
         animation-name: ZoomIn;
@@ -780,22 +693,25 @@
         transform: scale(1.1);
     }
     
-    .couch .image img{
+    .armchair .image img{
         margin-top: 30px;
         width: 150px;
         height: 170px;
         display: block;
     }
     
-    .couch h2{
+    .text h2{
         font-size: large;
-        font-weight: bolder;
+        font-weight: bold;
+        padding-top: 15px;
     }
-    .couch p{
+    .text p{
         font-size: medium;
+        padding-top: 20px;
     }
     
-    .couch .image:hover{
+    
+    .armchair .image:hover{
         animation-name: ZoomIn;
         animation-duration: 1s;
         transform: scale(1.1);
