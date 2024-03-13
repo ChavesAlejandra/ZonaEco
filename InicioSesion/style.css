@@ -1,0 +1,173 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.container {
+    width: 15%;
+    padding: 0% 3%;
+    padding-top: 3%;
+    border-radius: 50px;
+    background-color: #ffcf9d;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 0px;
+    font-weight: 300;  
+    margin: 10px;
+}
+
+input{
+    margin: 0px 18%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+.hide, .view{
+    width: 20px;
+    height: 20px;
+}
+
+.hide-view{
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    position: relative;
+    left: 68%;
+    bottom: 20px;
+}
+
+.view{display: none;}
+
+p{
+    margin: 10% 0%;
+}
+
+form{
+    margin-bottom: 50px;
+}
+
+.register{
+    color: darkgreen;
+    font-weight: 550;
+    margin: 0px 10px;
+}
+
+button{
+    position: relative;
+    left: 60%;
+    bottom: 72px;
+    padding: 5% 10%;
+    border: none;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: white;
+    font-size: medium;
+}
+
+@media (width<1500px){
+
+    label{
+        display: block;
+        margin-bottom: 0px;
+        font-weight: 300;  
+        margin: 10px 0px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    p{
+        margin: 5% 0%;
+        font-size: small;
+    }
+
+    .hide-view{
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: relative;
+        left: 95%;
+        bottom: 20px;
+    }
+
+    button{
+        position: relative;
+        left: 50%;
+        bottom: 37px;
+        padding: 2% 5%;
+        border: none;
+        border-radius: 20px;
+        background-color: darkgreen;
+        color: white;
+        font-size: small;
+    }
+}
+
+@media (width<1300px){
+
+    form{
+        margin-bottom: 0px;
+    }
+
+    button{
+        position: relative;
+        padding: 2% 5%;
+        border: none;
+        border-radius: 20px;
+        background-color: darkgreen;
+        color: white;
+        font-size: small;
+        width: 50%;
+        left: 65%;
+    }
+}
+
+@media (width<900px){
+
+    .container {
+        width: 15%;
+        padding: 0% 3%;
+        padding-top: 3%;
+        border-radius: 50px;
+        background-color: #ffcf9d;
+        padding-bottom: 5%;
+    }
+
+    button{
+        padding: 2% 5%;
+        border: none;
+        border-radius: 20px;
+        background-color: darkgreen;
+        color: white;
+        font-size: small;
+        width: 50%;
+        top: 20px;
+        left: 5px;
+    }
+}
