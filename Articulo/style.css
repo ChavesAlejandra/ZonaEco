@@ -1,13 +1,23 @@
+@keyframes zoomIn{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+
+@keyframes loveZoomIn{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+
 .products {
     width: 100%;
-    margin: 50px auto;
+    margin: 50px 0px;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 2.5%;
 }
 
 h1{
-    margin: 1% 11.5%;
+    margin: 1% 10.2%;
     font-size: 75px;
 }
 
@@ -27,8 +37,7 @@ main h2{
 
 .product{
     width: 15%;
-    margin-left: 150px;
-    margin: 0px 50px;
+    margin: 0% 3%;
     display: grid;
     grid-template-areas: 
     "."
@@ -45,13 +54,84 @@ main h2{
 .image-furniture{
     width: 90%;
     grid-area: image-furniture;
+}
 
+.image-furniture:hover{
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    transform: scale(1.1);
 }
 
 .love{
     width: 30px;
     grid-area: love;
     position: relative;
-    left: 246px;
+    left: 90%;
     top: 10px;
+    cursor: pointer;
+}
+
+.filled-love{display: none;}
+
+.love:hover{
+    animation-name: loveZoomIn;
+    animation-duration: 1.5s;
+    transform: scale(1.2);
+}
+
+@media (width<1300px){
+    .product{
+        width: 15%;
+        margin: 0% 3%;
+        display: grid;
+        grid-template-areas: 
+        "."
+        "image-furniture"
+        "."
+        "h2"
+        "love";
+        grid-template-rows: 10% 55% 10% 15% 10%;
+        background-color: #ffcf9d;
+        padding: 30px 30px;
+        border-radius: 50px;
+    }
+
+    main h2{
+        text-align: left;
+        font-size: medium;
+        grid-area: h2;
+        padding-top: 35px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (width<900px){
+
+    h1{
+        margin: 1% 7%;
+        font-size: 60px;
+    }
+
+    .product{
+        width: 15%;
+        margin: 0% 3%;
+        display: grid;
+        grid-template-areas: 
+        "."
+        "image-furniture"
+        "h2"
+        "love";
+        grid-template-rows: 10% 50% 30% 10%;
+        background-color: #ffcf9d;
+        padding: 25px 25px;
+        border-radius: 50px;
+    }
+
+    .love{
+        width: 20px;
+        grid-area: love;
+        position: relative;
+        left: 90%;
+        top: 10px;
+    }
 }
