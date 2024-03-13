@@ -10,6 +10,11 @@ button{
     font-style: italic;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 @media (width>=1300px){
     @keyframes CategoriesSpawn {
         0%{width: 0%; padding-left: 0%;}
@@ -120,7 +125,10 @@ button{
     .user{
         width: 39px;
         height: 39px;
-        padding: 0 45px;
+    }
+
+    #user-link{
+        margin: 0px 45px;
     }
     
     .help{
@@ -193,8 +201,7 @@ button{
         ". . . ."
         "company materials client-area icons"
         ". . . .";
-        grid-template-columns: 33% 33% 25% 10%;
-        
+        grid-template-columns: 33% 33% 25% 10%;        
     }
     
     footer h2{
@@ -360,7 +367,10 @@ button{
     .user{
         width: 39px;
         height: 39px;
-        padding: 0 45px;
+    }
+
+    #user-link{
+        margin: 0px 45px;
     }
     
     .help{
@@ -603,7 +613,10 @@ button{
     .user{
         width: 24px;
         height: 24px;
-        padding: 0 20px;
+    }
+    
+    #user-link{
+        margin: 0 20px;
     }
     
     .help{
