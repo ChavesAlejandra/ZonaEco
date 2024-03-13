@@ -99,11 +99,43 @@ b{
 }
 
 @media (width < 1300px){
+
     .images-products{
         margin-left: 0;
         grid-area: images;
         display: flex;
         justify-content: center;
+    }
+    
+    .bag img{
+        width: 70%;
+        height: 100%;
+    }
+    
+    .chair img{
+        width: 60%;
+        height: 100%;
+    }
+    
+    .shoerack img{
+        width: 60%;
+        height: 100%;
+    }
+
+    .pineapple img{
+        width: 40%;
+        height: 80%;
+    }
+    .buy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: big-buy;
+    }
+    .description{
+        grid-area: description;
+        padding-top: 5%;
+        width: 100%;
     }
 }
 @media (width < 1000px){

@@ -13,7 +13,7 @@ main{
 }
 
 .container {
-    width: 15%;
+    width: 20%;
     padding: 0% 3%;
     padding-top: 3%;
     border-radius: 50px;
@@ -45,6 +45,7 @@ input{
     border-right: none;
     background-color: transparent;
     outline: 0;
+    width: 80%;
 }
 
 .hide, .view{
@@ -57,7 +58,7 @@ input{
     height: 20px;
     z-index: 1;
     position: relative;
-    left: 68%;
+    left: 93%;
     bottom: 20px;
 }
 
@@ -80,8 +81,8 @@ form{
 button{
     position: relative;
     left: 60%;
-    bottom: 72px;
-    padding: 5% 10%;
+    bottom: 76px;
+    padding: 3% 5%;
     border: none;
     border-radius: 20px;
     background-color: darkgreen;
@@ -99,11 +100,15 @@ button{
     }
 
     input{
-        width: 90%;
+        width: 80%;
+    }
+
+    form{
+        margin-bottom: 20px;
     }
 
     p{
-        margin: 5% 0%;
+        margin: 5% 7%;
         font-size: small;
     }
 
@@ -112,14 +117,14 @@ button{
         height: 20px;
         z-index: 1;
         position: relative;
-        left: 95%;
+        left: 93%;
         bottom: 20px;
     }
 
     button{
         position: relative;
-        left: 50%;
-        bottom: 37px;
+        left: 60%;
+        bottom: 47px;
         padding: 2% 5%;
         border: none;
         border-radius: 20px;
@@ -135,6 +140,103 @@ button{
         margin-bottom: 0px;
     }
 
+    input{
+        width: 80%;
+    }
+
+    p{
+        margin: 5% 0%;
+        font-size: small;
+    }
+
+    .hide-view{
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: relative;
+        left: 90%;
+        bottom: 20px;
+    }
+
+    button{
+        position: relative;
+        padding: 3% 3%;
+        border: none;
+        border-radius: 20px;
+        background-color: darkgreen;
+        color: white;
+        font-size: small;
+        width: 50%;
+        left: 55%;
+    }
+}
+
+@media (width<900px){
+
+    .container {
+        width: 35%;
+        padding: 0% 3%;
+        padding-top: 3%;
+        border-radius: 50px;
+        background-color: #ffcf9d;
+    }
+
+    p{
+        margin: 5% 5%;
+        font-size: small;
+    }
+    
+    input{
+        width: 80%;
+    }
+
+    .hide-view{
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: relative;
+        left: 90%;
+        bottom: 20px;
+    }
+
+    button{
+        position: relative;
+        padding: 3% 3%;
+        border: none;
+        border-radius: 20px;
+        background-color: darkgreen;
+        color: white;
+        font-size: small;
+        width: 40%;
+        left: 60%;
+        bottom: 52px;
+    }
+}
+
+@media (width<700px){
+
+    .container {
+        width: 50%;
+        padding: 0% 3%;
+        padding-top: 3%;
+        border-radius: 50px;
+        background-color: #ffcf9d;
+    }
+
+    
+    input{
+        width: 80%;
+    }
+
+    .hide-view{
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: relative;
+        left: 90%;
+        bottom: 20px;
+    }
+
     button{
         position: relative;
         padding: 2% 5%;
@@ -143,31 +245,50 @@ button{
         background-color: darkgreen;
         color: white;
         font-size: small;
-        width: 50%;
+        width: 30%;
         left: 65%;
+        bottom: 50px;
     }
 }
 
-@media (width<900px){
-
+@media (width<500px){
     .container {
-        width: 15%;
+        width: 45%;
         padding: 0% 3%;
         padding-top: 3%;
         border-radius: 50px;
         background-color: #ffcf9d;
-        padding-bottom: 5%;
+    }
+
+    p{
+        margin: 5% 25%;
+        margin-top: 25%;
+        font-size: small;
+    }
+    
+    input{
+        width: 80%;
+    }
+
+    .hide-view{
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        position: relative;
+        left: 90%;
+        bottom: 20px;
     }
 
     button{
-        padding: 2% 5%;
+        position: relative;
+        padding: 3% 5%;
         border: none;
         border-radius: 20px;
         background-color: darkgreen;
         color: white;
-        font-size: small;
-        width: 50%;
-        top: 20px;
-        left: 5px;
+        font-size: 12px;
+        width: 40%;
+        left: 30%;
+        bottom: 100px;
     }
 }
