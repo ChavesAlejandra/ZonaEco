@@ -8,6 +8,7 @@
     100%{transform: scale(1.2);}
 }
 
+
 .products {
     width: 100%;
     margin: 50px 0px;
@@ -21,7 +22,7 @@ h1{
     font-size: 75px;
 }
 
-main h2{
+.products h2{
     text-align: left;
     font-size: x-large;
     grid-area: h2;
@@ -96,7 +97,7 @@ main h2{
         border-radius: 50px;
     }
 
-    main h2{
+    .products h2{
         text-align: left;
         font-size: medium;
         grid-area: h2;
@@ -108,7 +109,7 @@ main h2{
 @media (width<900px){
 
     h1{
-        margin: 1% 7%;
+        margin: 0% 7%;
         font-size: 60px;
     }
 
