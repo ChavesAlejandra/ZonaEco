@@ -1,0 +1,57 @@
+.products {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+h1{
+    margin: 1% 11.5%;
+    font-size: 75px;
+}
+
+main h2{
+    text-align: left;
+    font-size: x-large;
+    grid-area: h2;
+    padding-top: 35px;
+    margin-bottom: 15px;
+}
+
+.first-row, .second-row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.product{
+    width: 15%;
+    margin-left: 150px;
+    margin: 0px 50px;
+    display: grid;
+    grid-template-areas: 
+    "."
+    "image-furniture"
+    "."
+    "h2"
+    "love";
+    grid-template-rows: 10% 55% 10% 15% 10%;
+    background-color: #ffcf9d;
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+.image-furniture{
+    width: 90%;
+    grid-area: image-furniture;
+
+}
+
+.love{
+    width: 30px;
+    grid-area: love;
+    position: relative;
+    left: 246px;
+    top: 10px;
+}
