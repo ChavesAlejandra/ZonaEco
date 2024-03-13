@@ -50,12 +50,6 @@ b{
     font-size: x-large;
 }
 
-.buy{
-    grid-area: buy;
-    padding-top: 25%;
-    
-}
-
 .buy div{
     margin: 5%;
 }
@@ -108,6 +102,11 @@ b{
         height: 50px;
         margin: 0px 10px;
     }
+    .buy{
+        grid-area: buy;
+        padding-top: 25%;
+        
+    }
     
     .comments{
         grid-area: comments;
@@ -144,11 +143,26 @@ b{
 }
 
 @media (width<1400px){
+    .product{
+        display: grid;
+        grid-template-areas:
+        "chair description "
+        "buy buy "
+        "comments . " ;
+        grid-template-columns: 50% 50% ;
+    }
+     
+    .add-cart img{
+        width: 25PX;
+        margin-right: 5px ;
+    }
     .name{
         display: none;
     }
     .name-responsive{
-        margin-top: 20px;
+        font-size: x-large;
+        margin-left: 25px;
+        margin-bottom: 20px;
         display: block;
     }
     
@@ -168,7 +182,14 @@ b{
         grid-area: comments;
         padding-top: 10%;
         padding-bottom: 5%;
-        padding-left: 45%;
+        padding-left: 20%;
+    }
+    .buy{
+        display: flex;
+        align-items: center;
+        grid-area: buy;
+        margin-left: 7%;
+        width: 70%;     
     }
 
     .price{
@@ -176,13 +197,12 @@ b{
         border-radius: 50px;
         width: 30%;
         padding: 10px;
-        padding-left: 7%;
     }
     
     .count{
         background-color: #ffd09d;
         border-radius: 50px;
-        width: 70%;
+        width: 50%;
         padding: 10px;
         padding-left: 7%;
     }
@@ -234,41 +254,45 @@ b{
         grid-area: comments;
         padding-top: 10%;
         padding-bottom: 5%;
-        padding-left: 45%;
+        padding-left: 20%;
     }
 
     .price{
         background-color: #ffd09d;
         border-radius: 50px;
-        width: 40%;
-        padding: 10px 15px;
-        padding-left: 8%;
+
     }
     
     .count{
         background-color: #ffd09d;
         border-radius: 50px;
-        width: 100%;
         padding: 10px;
-        padding-left: 7%;
     }
     
     .add-cart{
         background-color: #ffd09d;
         border-radius: 50px;
-        width: 90%;
         padding: 10px;
-        padding-left: 7%;
         display: flex;
         align-items: center;
     }
 }
 @media (width<730px){
+    .product{
+        display: grid;
+        grid-template-areas:
+        "chair description "
+        "info ."
+        "buy buy "
+        "comments . " ;
+        grid-template-columns: 50% 50% ;
+    }
 
     .information{
+        grid-area: info;
         position: relative;
-        right: 135%;
-        bottom: 13%;
+        padding-top: 35%;
+        right: 117%;
     }
     
     .comments{
@@ -277,5 +301,27 @@ b{
         padding-top: 0%;
         padding-bottom: 5%;
         padding-left: 20%;
+    }
+    .description{
+        padding-top: 25%;
+    }
+    .price{
+        background-color: #ffd09d;
+        border-radius: 50px;
+
+    }
+    
+    .count{
+        background-color: #ffd09d;
+        border-radius: 50px;
+        width: 70%;
+    }
+    
+    .add-cart{
+        background-color: #ffd09d;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
     }
 }
