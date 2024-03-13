@@ -17,7 +17,7 @@
                 <img src="Images/menu.png" alt="menu" class="menu" id="menu">
                 <img src="Images/close.png" alt="close" class="close" id="close">
             </button>
-            <img src="Images/logo.png" alt="logo" class="logo">
+            <a href="../Principal/index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
             <h2>ZONA ECO</h2>
         </div>
         <div class="search-bar">
@@ -25,8 +25,8 @@
             <img src="Images/search.png" alt="search" class="search">
         </div>
         <div class="icons">
-            <img src="Images/cart.png" alt="cart" class="cart">
-            <img src="Images/user.png" alt="user" class="user">
+            <a href="../Carrito/index.html"><img src="Images/cart.png" alt="cart" class="cart"></a>
+            <a href="../InicioSesion/index.html" id="user-link"><img src="Images/user.png" alt="user" class="user"></a>
             <img src="Images/help.png" alt="help" class="help">
         </div>
     </header>
@@ -61,19 +61,25 @@
                 <img src="Images/school.png" alt="school" class="category-icon">
                 <p>Material escolar</p>
             </div>
-            <div class="furniture">
-                <img src="Images/furniture.png" alt="furniture" class="category-icon">
-                <p>Muebles</p>
-            </div>
+            <a href="../Articulo/index.html">
+                <div class="furniture">
+                    <img src="Images/furniture.png" alt="furniture" class="category-icon">
+                    <p>Muebles</p>
+                </div>
+            </a>
             <div class="clothes">
                 <img src="Images/clothes.png" alt="clothes" class="category-icon">
                 <p>Ropa</p>
             </div>
         </div>
+        </div>
         <div class="product">
             <div class="chair">
                 <div class="chair-image">
-                    <img src="Images/chair-grey.png" alt="chair-grey" class="chair-gray">
+                    <img src="Images/chair-grey.png" alt="chair-grey" id="chair-grey">
+                    <img src="Images/chair-beige.png" alt="chair-beige" id="chair-beige">
+                    <img src="Images/chair-black.png" alt="chair-black" id="chair-black">
+                    <img src="Images/chair-white.png" alt="chair-white" id="chair-white">
                 </div>
                 <div class="change-color">
                     <div class="colors">
@@ -83,24 +89,28 @@
                         <div id="white"></div>
                     </div>
                     <div class="love">
-                        <img src="Images/love.png">
+                        <img src="Images/love.png" id="empty-love">
+                        <img src="Images/love-in.png" id="filled-love">
                     </div>
                 </div>
+                <h2 class="name-responsive">SILLA DE POLIPROPILENO CON PATAS ACERO EFECTO MADERA OPTIK</h2>
             </div>
             <div class="description">
                 <h2 class="name">SILLA DE POLIPROPILENO CON PATAS ACERO EFECTO MADERA OPTIK</h2>
                 <br>
                 <p>De apariencia moderna y actual, esta silla de comedor causará sensación en tus espacios. Gracias a su disponibilidad en varios colores, podrás combinarlas y mezclarlas entre sí para conseguir un resultado imponente. Se trata de una silla de estilo atemporal y combinable con diferentes tipos de decoración y ambientes, perfecta para uso doméstico o profesional como en establecimientos de restauración, bares o cafeterías.
-                <br>
+                <br> <br>
                 El polipropileno es un tipo de plástico que se caracteriza por su alta resistencia y firmeza, de manera que cuesta que se deforme incluso con los impactos. Con patas metálicas barnizadas que imitan la madera.</p>
                 <br>
-                <p><b>Información adicional del producto:</b></p>
-                <br>
-                <p>Medidas: 43x53x85 cm
-                    <br>Material: Polipropileno reciclado, patas metálicas
-                    <br>Altura patas: 44cm.
-                    <br>Altura respaldo: 43 cm.
-                    <br>Requiere montaje.</p>
+                <span class="information">
+                    <p><b>Información adicional del producto:</b></p>
+                    <br>
+                    <p>Medidas: 43x53x85 cm
+                        <br>Material: Polipropileno reciclado, patas metálicas
+                        <br>Altura patas: 44cm.
+                        <br>Altura respaldo: 43 cm.
+                        <br>Requiere montaje.</p>
+                </span>
             </div>
 
             <div class="buy">
@@ -123,8 +133,9 @@
                         </select>
                 </div>
                 <div class="add-cart">
-                    <img src="Images/add-to-cart.png" alt="add-cart">
-                    Añadir al carrito
+                    <img src="Images/add-to-cart.png" alt="add-cart" id="add-to-cart">
+                    <img src="Images/cart.png" alt="added-to-cart" id="added-to-cart">
+                    <span id="add-to-cart-text">Añadir al carrito</span>
                 </div>
             </div>
             
