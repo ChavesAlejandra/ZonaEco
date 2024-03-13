@@ -10,6 +10,11 @@ button{
     font-style: italic;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 @media (width>=1300px){
     @keyframes CategoriesSpawn {
         0%{width: 0%; padding-left: 0%;}
@@ -120,7 +125,10 @@ button{
     .user{
         width: 39px;
         height: 39px;
-        padding: 0 45px;
+    }
+
+    #user-link{
+        margin: 0px 45px;
     }
     
     .help{
@@ -169,6 +177,13 @@ button{
         padding: 2.8px;
         width: 90%;
     }
+
+    .categories a{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+    }
     
     .categories div:hover{
         background-color: #ffcf9d;
@@ -193,8 +208,7 @@ button{
         ". . . ."
         "company materials client-area icons"
         ". . . .";
-        grid-template-columns: 33% 33% 25% 10%;
-        
+        grid-template-columns: 33% 33% 25% 10%;        
     }
     
     footer h2{
@@ -360,7 +374,10 @@ button{
     .user{
         width: 39px;
         height: 39px;
-        padding: 0 45px;
+    }
+
+    #user-link{
+        margin: 0px 45px;
     }
     
     .help{
@@ -407,6 +424,13 @@ button{
         margin: 11px 0px;
         border-radius: 10px;
         padding: 2.8px;
+        width: 90%;
+    }
+    
+    .categories a{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
         width: 90%;
     }
     
@@ -603,7 +627,10 @@ button{
     .user{
         width: 24px;
         height: 24px;
-        padding: 0 20px;
+    }
+    
+    #user-link{
+        margin: 0 20px;
     }
     
     .help{
@@ -641,12 +668,26 @@ button{
         align-items: center;
         margin: 0px 5px;
         border-radius: 10px;
-        padding: 2.8px;
-        width: 5%;
         padding: 0% 2.5%;
     }
-    
+
+    .categories a{
+        align-items: center;
+        border-radius: 10px;
+        padding: 0% 2.13%;
+    }
+
     .categories div:hover{
+        background-color: #ffcf9d;
+        box-shadow: 4px 4px 4px;
+    }
+
+    .categories .furniture:hover{
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .categories a:hover{
         background-color: #ffcf9d;
         box-shadow: 4px 4px 4px;
     }
@@ -670,7 +711,6 @@ button{
         "company materials client-area icons"
         ". . . .";
         grid-template-columns: 25% 25% 25% 25%;
-        
     }
     
     footer h2{
