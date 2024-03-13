@@ -177,6 +177,13 @@ a{
         padding: 2.8px;
         width: 90%;
     }
+
+    .categories a{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+    }
     
     .categories div:hover{
         background-color: #ffcf9d;
@@ -420,6 +427,13 @@ a{
         width: 90%;
     }
     
+    .categories a{
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 90%;
+    }
+    
     .categories div:hover{
         background-color: #ffcf9d;
         box-shadow: 4px 4px 4px;
@@ -654,12 +668,26 @@ a{
         align-items: center;
         margin: 0px 5px;
         border-radius: 10px;
-        padding: 2.8px;
-        width: 5%;
         padding: 0% 2.5%;
     }
-    
+
+    .categories a{
+        align-items: center;
+        border-radius: 10px;
+        padding: 0% 2.13%;
+    }
+
     .categories div:hover{
+        background-color: #ffcf9d;
+        box-shadow: 4px 4px 4px;
+    }
+
+    .categories .furniture:hover{
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .categories a:hover{
         background-color: #ffcf9d;
         box-shadow: 4px 4px 4px;
     }
@@ -683,7 +711,6 @@ a{
         "company materials client-area icons"
         ". . . .";
         grid-template-columns: 25% 25% 25% 25%;
-        
     }
     
     footer h2{
