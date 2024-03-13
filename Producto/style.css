@@ -199,6 +199,10 @@ b{
 }
 
 @media (width<1000px){
+    .product{
+        padding-top: 5%;
+    }
+
     .chair{
         padding-top: 5%;
         padding-left: 20%;
