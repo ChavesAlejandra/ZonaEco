@@ -1,0 +1,748 @@
+@keyframes ZoomIn{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+
+@keyframes LoveZoomIn{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.25);}
+}
+
+a{color: black; text-decoration: none;}
+
+@media (width>=1300px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+    }
+    
+    .whoweare{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whoweare;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whoweare h2{
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+    
+    .whoweare p{
+        font-size: medium;
+    }
+    
+    .whatwedo{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whatwedo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whatwedo h2{
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+    
+    .whatwedo p{
+        font-size: medium;
+    }
+    
+    .carousel{
+        background-color: #ffcf9d;
+        border-radius: 50px;
+        padding: 20px;
+        grid-area: carousel;
+        display: grid;
+        grid-template-areas: 
+        "left-arrow main-carousel right-arrow";
+        grid-template-columns: 5% 90% 5%;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 62%;
+    }
+    
+    #inner-carousel{
+        overflow: hidden;
+    }
+    
+    #items-list{
+        display: flex;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        grid-area: main-carousel;
+        overflow: hidden;
+    }
+    
+    
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff4e8;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0px 30px;
+        justify-content: space-between;
+        min-width: 270px;
+        max-width: 270px;
+        min-height: 380px;
+        max-height: 380px;
+    }
+    
+    .left-arrow{
+        z-index: 1;
+        grid-area: left-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow{
+        z-index: 1;
+        grid-area: right-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow img{
+        height: 50px;
+    }
+    
+    .chair .image img{
+        width: 260px;
+        height: 300px;
+    }
+    
+    
+    
+    .chair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .spongebob .image img{
+        width: 230px;
+        height: 300px;
+    }
+    
+    
+    
+    .spongebob .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .sweater .image img{
+        width: 270px;
+        height: 300px;
+        display: block;
+    }
+    
+    
+    
+    .sweater .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .drawer .image img{
+        margin-top: 30px;
+        width: 220px;
+        height: 270px;
+        display: block;
+    }
+    
+    
+    
+    .drawer .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .kidsbag .image img{
+        width: 320px;
+        height: 300px;
+        display: block;
+    }
+    
+    
+    
+    .kidsbag .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .armchair .image img{
+        margin-top: 30px;
+        width: 250px;
+        height: 270px;
+        display: block;
+    }
+    
+    .text h2{
+        font-size: large;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .text p{
+        font-size: medium;
+        padding-top: 20px;
+    }
+    
+    .armchair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .love-icon{
+        width: 20px;
+        position: relative;
+        bottom: 360px;
+        left: 115px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .love-icon img{
+        width: 20px;
+    }
+    
+    .filled-love{
+        display: none;
+    }
+    
+    .empty-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+    .filled-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+}
+
+@media (width<1300px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px;
+    }
+    
+    .whoweare{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whoweare;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whoweare h2{
+        font-size: large;
+        padding-bottom: 20px;
+    }
+    
+    .whoweare p{
+        font-size: medium;
+    }
+    
+    .whatwedo{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whatwedo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whatwedo h2{
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+    
+    .whatwedo p{
+        font-size: medium;
+    }
+    
+    .carousel{
+        background-color: #ffcf9d;
+        border-radius: 50px;
+        padding: 20px;
+        grid-area: carousel;
+        display: grid;
+        grid-template-areas: 
+        "left-arrow main-carousel right-arrow";
+        grid-template-columns: 5% 90% 5%;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 62%;
+    }
+    
+    #inner-carousel{
+        overflow: hidden;
+    }
+    
+    #items-list{
+        display: flex;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        grid-area: main-carousel;
+        overflow: hidden;
+    }
+    
+    
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff4e8;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0px 30px;
+        justify-content: space-between;
+        min-width: 270px;
+        max-width: 270px;
+        min-height: 380px;
+        max-height: 380px;
+    }
+    
+    .left-arrow{
+        z-index: 1;
+        grid-area: left-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow{
+        z-index: 1;
+        grid-area: right-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow img{
+        height: 50px;
+    }
+    
+    .chair .image img{
+        width: 260px;
+        height: 300px;
+    }
+    
+    
+    
+    .chair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .spongebob .image img{
+        width: 230px;
+        height: 300px;
+    }
+    
+    
+    
+    .spongebob .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .sweater .image img{
+        width: 270px;
+        height: 300px;
+        display: block;
+    }
+    
+    
+    
+    .sweater .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .drawer .image img{
+        margin-top: 30px;
+        width: 220px;
+        height: 270px;
+        display: block;
+    }
+    
+    
+    
+    .drawer .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .kidsbag .image img{
+        width: 320px;
+        height: 300px;
+        display: block;
+    }
+    
+    
+    
+    .kidsbag .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .armchair .image img{
+        margin-top: 30px;
+        width: 250px;
+        height: 270px;
+        display: block;
+    }
+    
+    .text h2{
+        font-size: large;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .text p{
+        font-size: medium;
+        padding-top: 20px;
+    }
+    
+    .armchair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .love-icon{
+        width: 20px;
+        position: relative;
+        bottom: 360px;
+        left: 100px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .love-icon img{
+        width: 20px;
+    }
+    
+    .filled-love{
+        display: none;
+    }
+    
+    .empty-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+    .filled-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+}
+
+@media (width<900px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 40px;
+        margin-top: 60px;
+    }
+    
+    .whoweare{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whoweare;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whoweare h2{
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+    
+    .whoweare p{
+        font-size: medium;
+    }
+    
+    .whatwedo{
+        background-color: #ffcf9d;
+        border-radius: 20px;
+        padding: 5.5px 20px;
+        grid-area: whatwedo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+    }
+    
+    .whatwedo h2{
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+    
+    .whatwedo p{
+        font-size: medium;
+    }
+    
+    .carousel{
+        background-color: #ffcf9d;
+        border-radius: 50px;
+        padding: 20px;
+        grid-area: carousel;
+        display: grid;
+        grid-template-areas: 
+        "left-arrow main-carousel right-arrow";
+        grid-template-columns: 8% 84.5% 8%;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 62%;
+    }
+    
+    #inner-carousel{
+        overflow: hidden;
+    }
+    
+    #items-list{
+        display: flex;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        grid-area: main-carousel;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    
+    
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff4e8;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0px 20px;
+        justify-content: space-between;
+        min-width: 170px;
+        max-width: 170px;
+        min-height: 280px;
+        max-height: 280px;
+    }
+    
+    .left-arrow{
+        z-index: 1;
+        grid-area: left-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow{
+        z-index: 1;
+        grid-area: right-arrow;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .right-arrow img{
+        height: 50px;
+    }
+    
+    .chair .image img{
+        width: 160px;
+        height: 200px;
+    }
+    
+    
+    
+    .chair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .spongebob .image img{
+        width: 150px;
+        height: 200px;
+    }
+    
+
+    
+    .spongebob .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .sweater .image img{
+        width: 170px;
+        height: 200px;
+        display: block;
+    }
+    
+   
+    
+    .sweater .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .drawer .image img{
+        margin-top: 30px;
+        width: 120px;
+        height: 170px;
+        display: block;
+    }
+
+    
+    .drawer .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .kidsbag .image img{
+        margin: 25px;
+        width: 170px;
+        height: 150px;
+        display: block;
+    }
+    
+
+    
+    .kidsbag .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .armchair .image img{
+        margin-top: 30px;
+        width: 150px;
+        height: 170px;
+        display: block;
+    }
+    
+    .text h2{
+        font-size: large;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    .text p{
+        font-size: medium;
+        padding-top: 20px;
+    }
+    
+    
+    .armchair .image:hover{
+        animation-name: ZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.1);
+    }
+    
+    .love-icon{
+        width: 20px;
+        position: relative;
+        bottom: 260px;
+        left: 60px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .love-icon img{
+        width: 20px;
+    }
+    
+    .filled-love{
+        display: none;
+    }
+    
+    .empty-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+    .filled-love:hover{
+        animation-name: LoveZoomIn;
+        animation-duration: 1s;
+        transform: scale(1.25);
+    }
+}
