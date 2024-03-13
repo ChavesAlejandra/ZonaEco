@@ -1,0 +1,137 @@
+b{
+    font-weight: bold;
+}
+.articles{
+    display: grid;
+    grid-template-areas: "images description big-buy";
+    grid-template-columns: 30% 30% 30% ;
+    margin-bottom: 3%;
+}
+
+.page-name{
+    font-size: 55px;
+    margin-left: 5%;
+    padding-top: 3%;
+}
+
+.product-name{
+    font-size: 30px;
+}
+
+.cart-product{
+    height: 30%;
+    display: flex;
+}
+
+.bag img{
+    width: 70%;
+    height: 100%;
+}
+
+.pineapple img{
+    width: 40%;
+    height: 90%;
+}
+
+.shoerack img{
+    width: 60%;
+    height: 100%;
+}
+.chair img{
+    width: 60%;
+}
+
+.container{
+    margin-top:3%;
+    width: 20%;
+    font-size: 20px;
+}
+
+.container-pineapple{
+    margin-top:3%;
+    padding-left:5%; 
+}
+
+.container-shoerack{
+    margin-top:3%;
+    padding-left:2% ;
+}
+
+.images-products{
+    margin-left: 20%;
+    grid-area: images;
+    display: flex;
+    justify-content: center;
+}
+.description{
+    grid-area: description;
+    padding-top: 5%;
+    width: 75%;
+}
+.buy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: big-buy;
+}
+
+.price-tag{
+    background-color: #ffcf9d;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+
+.count{
+    background-color: #ffcf9d;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    border-radius: 20px;
+
+}
+
+
+.buy-now{
+    background-color: #ffcf9d;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+@media (width < 1300px){
+    .images-products{
+        margin-left: 0;
+        grid-area: images;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (width < 1000px){
+    .product-name{
+        font-size: 20px;
+    }
+    .description{
+        grid-area: description;
+        font-size: 80%;
+        padding-top: 5%;
+    }
+    .bag img{
+        width: 70%;
+        height: 90%;
+    }
+    
+    .pineapple img{
+        width: 60%;
+        height: 90%;
+    }
+    
+    .shoerack img{
+        width: 45%;
+        height: 90%;
+    }
+    .chair img{
+        width: 60%;
+        height: 90%;
+    }
+}
+
